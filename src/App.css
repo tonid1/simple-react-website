@@ -57,6 +57,7 @@ section{
 
 .menu li a{
   text-decoration: none;
+  color: #052e05;
 }
 
 .menu li a:visited, .menu li a:focus, .menu li a:active{

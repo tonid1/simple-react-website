@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import UpperSlider from './components/UpperSlider';
+import {SliderContent} from './arrays/SliderContent';
+import FirstTextSection from './components/FirstTextSection';
+import SecondSlider from './components/SecondSlider';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className='mockup-body'>
+            <Header />
+            <UpperSlider slides={SliderContent} />
+            <FirstTextSection />
+            <div className='middle-div'>
+              <h2 className='middle-div-text'>
+                There are hundreds more endangered species on Earth.
+              </h2>
+            </div>
+            <SecondSlider />
+            <Footer />
+        </div>
   );
 }
 
